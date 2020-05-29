@@ -1,0 +1,5 @@
+- hosts: all
+  remote_user: root
+  roles:
+    - role: role-ssl
+      ssl_certs_common_name: "example.com"

@@ -1,0 +1,21 @@
+---
+driver:
+  name: docker
+
+provisioner:
+  name: ansible_playbook
+  playbook: test.yml
+  hosts: all
+  role_name: role-ssl
+  update_package_repos: false
+  require_chef_for_busser: false
+  require_ruby_for_busser: true
+
+verifier:
+  ruby_bindir: '/usr/bin'
+
+platforms:
+  - name: ubuntu-16.04
+
+suites:
+  - name: default
