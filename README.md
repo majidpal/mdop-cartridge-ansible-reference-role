@@ -1,0 +1,1 @@
+# mdop-cartridge-ansible-reference-role
